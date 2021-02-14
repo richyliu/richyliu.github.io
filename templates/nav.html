@@ -1,0 +1,10 @@
+{% macro current(cur) %}
+  {% set sections = ["Home", "About", "Blog", "Projects"] %}
+  <ul class="sidebar-nav">
+    {% for section in sections %}
+      <li class="sidebar-nav-item {% if section == cur %}active{% endif %}">
+        <a href="/{{section | lower}}">{{section}}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}

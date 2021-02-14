@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://richyliu.github.io/"
 
 title = "Richard Liu"
 description = "My Blog"
@@ -11,9 +11,3 @@ compile_sass = true
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = false
-
-[extra]
-hyde_links = [
-  { url = "https://github.com/richyliu", name = "Github" },
-  { url = "https://richyliu.github.io/key.pgp", name = "Public PGP key" },
-]

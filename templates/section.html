@@ -1,10 +1,16 @@
+{% import "nav.html" as nav %}
+
 {% extends "index.html" %}
+
+{% block sidebar_nav %}
+{{ nav::current(cur=section.title) }}
+{% endblock sidebar_nav %}
 
 {% block content %}
 {{ section.content | safe }}
 
 <div class="posts">
-  {% for page in section.pages | reverse %}
+  {% for page in section.pages %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ page.permalink }}">
