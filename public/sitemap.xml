@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://richyliu.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://richyliu.github.io/about/</loc>
+    </url>
+    <url>
+        <loc>https://richyliu.github.io/blog/</loc>
+    </url>
+    <url>
+        <loc>https://richyliu.github.io/blog/one-year-of-shorthand/</loc>
+        <lastmod>2021-02-08</lastmod>
+    </url>
+    <url>
+        <loc>https://richyliu.github.io/home/</loc>
+    </url>
+    <url>
+        <loc>https://richyliu.github.io/projects/</loc>
+    </url>
+    <url>
+        <loc>https://richyliu.github.io/projects/gregg-shorthand-dict/</loc>
+    </url>
+    <url>
+        <loc>https://richyliu.github.io/projects/plojo/</loc>
+    </url>
+</urlset>
