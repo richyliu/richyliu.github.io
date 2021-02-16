@@ -1,0 +1,21 @@
+{% import "nav.html" as nav %}
+
+{% extends "index.html" %}
+
+{% block sidebar_nav %}
+{{ nav::current(cur='Projects') }}
+{% endblock sidebar_nav %}
+
+{% block content %}
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-date">
+    {% if page.extra.website is defined %}
+      <a href="{{ page.extra.website }}">Website</a>
+    {% endif %}
+    <a href="{{ page.extra.github }}">Github</a>
+  </div>
+  {{ page.content | safe }}
+</div>
+{% endblock content %}
+

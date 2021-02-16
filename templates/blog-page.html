@@ -1,4 +1,10 @@
+{% import "nav.html" as nav %}
+
 {% extends "index.html" %}
+
+{% block sidebar_nav %}
+{{ nav::current(cur='Blog') }}
+{% endblock sidebar_nav %}
 
 {% block content %}
 <div class="post">
