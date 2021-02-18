@@ -2,67 +2,70 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-      <!-- Enable responsiveness on mobile devices-->
-      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+    <!-- Enable responsiveness on mobile devices-->
+    <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
 
-      <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
-      <!-- CSS -->
-      <link rel="stylesheet" href="{{ get_url(path="print.css", trailing_slash=false) }}" media="print">
-      <link rel="stylesheet" href="{{ get_url(path="poole.css", trailing_slash=false) }}">
-      <link rel="stylesheet" href="{{ get_url(path="hyde.css", trailing_slash=false) }}">
-      <link rel="stylesheet" href="{{ get_url(path="extra.css", trailing_slash=false) }}">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ get_url(path="print.css", trailing_slash=false) }}" media="print">
+    <link rel="stylesheet" href="{{ get_url(path="poole.css", trailing_slash=false) }}">
+    <link rel="stylesheet" href="{{ get_url(path="hyde.css", trailing_slash=false) }}">
+    <link rel="stylesheet" href="{{ get_url(path="extra.css", trailing_slash=false) }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 
-      {% if config.generate_feed %}
-        <link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="RSS" href="{{ get_url(path=config.feed_filename) | safe }}">
-      {% endif %}
+    {% if config.generate_feed %}
+    <link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="RSS" href="{{ get_url(path=config.feed_filename) | safe }}">
+  {% endif %}
 
-      {% block extra_head %}
-      {% endblock extra_head %}
-    </head>
+  {% block extra_head %}
+  {% endblock extra_head %}
+  </head>
 
-    <body class="theme-base-08">
-        {% block sidebar %}
-            <div class="sidebar">
-                <div class="container sidebar-sticky">
-                    <div class="sidebar-about">
-                        {% block sidebar_about %}
-                            <a href="{{ config.base_url }}"><h1>{{ config.title }}</h1></a>
-                            {% if config.description %}
-                            <p class="lead">{{config.description}}</p>
-                            {% endif %}
-                        {% endblock sidebar_about %}
-                    </div>
+  <body class="theme-base-08">
+    {% block sidebar %}
+      <div class="sidebar">
+        <div class="container sidebar-sticky">
+          <div class="profile-img">
+            <img src="{{ resize_image(path="../static/profile.png", width=160, op="fit_width") }}" />
+          </div>
+          <div class="sidebar-about">
+            {% block sidebar_about %}
+              <a href="{{ config.base_url }}"><h1>{{ config.title }}</h1></a>
+              {% if config.description %}
+                <p class="lead">{{config.description}}</p>
+              {% endif %}
+            {% endblock sidebar_about %}
+          </div>
 
-                    <ul class="sidebar-nav">
-                        {% block sidebar_nav %}
-                          {{ nav::current(cur="") }}
-                        {% endblock sidebar_nav %}
-                        <li class="sidebar-nav-item">
-                          <a href="https://github.com/richyliu">
-                            <img class="icon" src="/icons/github.svg"/>
-                          </a>
-                          <a href="https://www.linkedin.com/in/richard-liu-4775571a7/">
-                            <img class="icon" src="/icons/linkedin.svg"/>
-                          </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        {% endblock sidebar %}
-
-        <div class="content container">
-            {% block content %}
-            {{ section.content | safe }}
-            {% endblock content %}
+          <ul class="sidebar-nav">
+            {% block sidebar_nav %}
+              {{ nav::current(cur="") }}
+            {% endblock sidebar_nav %}
+            <li class="sidebar-nav-item">
+              <a href="https://github.com/richyliu">
+                <img class="icon" src="/icons/github.svg"/>
+              </a>
+              <a href="https://www.linkedin.com/in/richard-liu-4775571a7/">
+                <img class="icon" src="/icons/linkedin.svg"/>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
+    {% endblock sidebar %}
 
-    </body>
+    <div class="content container">
+      {% block content %}
+        {{ section.content | safe }}
+      {% endblock content %}
+    </div>
+
+  </body>
 
 </html>

@@ -1,5 +1,5 @@
 {% macro current(cur) %}
-  {% set sections = ["Home", "About", "Blog", "Projects"] %}
+  {% set sections = ["Home", "Contact", "Blog", "Projects"] %}
   <ul class="sidebar-nav">
     {% for section in sections %}
       <li class="sidebar-nav-item {% if section == cur %}active{% endif %}">
