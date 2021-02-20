@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://richyliu.github.io/</loc>
+        <loc>https://www.rliu.dev/</loc>
     </url>
     <url>
-        <loc>https://richyliu.github.io/blog/</loc>
+        <loc>https://www.rliu.dev/blog/</loc>
     </url>
     <url>
-        <loc>https://richyliu.github.io/blog/one-year-of-shorthand/</loc>
+        <loc>https://www.rliu.dev/blog/one-year-of-shorthand/</loc>
         <lastmod>2021-02-08</lastmod>
     </url>
     <url>
-        <loc>https://richyliu.github.io/contact/</loc>
+        <loc>https://www.rliu.dev/contact/</loc>
     </url>
     <url>
-        <loc>https://richyliu.github.io/home/</loc>
+        <loc>https://www.rliu.dev/home/</loc>
     </url>
     <url>
-        <loc>https://richyliu.github.io/projects/</loc>
+        <loc>https://www.rliu.dev/projects/</loc>
     </url>
     <url>
-        <loc>https://richyliu.github.io/projects/gregg-shorthand-dict/</loc>
+        <loc>https://www.rliu.dev/projects/gregg-shorthand-dict/</loc>
     </url>
     <url>
-        <loc>https://richyliu.github.io/projects/plojo/</loc>
+        <loc>https://www.rliu.dev/projects/plojo/</loc>
     </url>
 </urlset>

@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://richyliu.github.io/"
+base_url = "https://www.rliu.dev/"
 
 title = "Richard Liu"
 description = "Cupertino, CA"
