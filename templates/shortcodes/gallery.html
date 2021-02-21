@@ -1,10 +1,8 @@
 <div class="gallery">
-  {% for asset in section.assets | sort %}
-    {% if asset is matching("[.](jpg|png)$") %}
-      <a href="{{ get_url(path=asset) }}">
-        {# Remove leading slash from the path. The path cannot be absolute for some reason #}
-        {% set url = asset | split(pat="/") | slice(start=1) | join(sep="/") %}
-        <img src="{{ resize_image(path=url, width=200, height=150) }}" />
+  {% for img in images %}
+    {% if img is matching("[.](jpg|png)$") %}
+      <a href="{{ get_url(path=img) }}">
+        <img src="{{ img }}" />
       </a>
       &ensp;
     {% endif %}

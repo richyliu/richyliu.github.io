@@ -19,11 +19,18 @@
   margin: 1rem 0px 2rem;
 }
 
+@media (max-width: 48em) {
+  .profile-img > img {
+    margin: 1rem auto 2rem;
+  }
+}
+
 .container {
   overflow-y: scroll;
   max-height: calc(100% - 2rem);
 }
 
-.gallery img {
+.content img {
   display: inline;
+  margin: 0.2rem;
 }
