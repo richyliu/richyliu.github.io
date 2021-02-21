@@ -8,7 +8,7 @@ You can send me an email at <a href="mailto:richardliu@rliu.dev">richardliu@rliu
 
 ## Resume
 
-You can find my resume [here](/resume_2021-02-16.pdf).
+You can find my resume [here](/resume.pdf).
 
 ## PGP Key
 
