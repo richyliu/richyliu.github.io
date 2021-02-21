@@ -4,8 +4,7 @@ title = "About"
 
 # Contact
 
-You can send me an email at `richy[dot]liu[dot]2002[:)]gmail.com` (replace the
-smiley face with the @ symbol).
+You can send me an email at <a href="mailto:richardliu@rliu.dev">richardliu@rliu.dev</a>.
 
 ## Resume
 
