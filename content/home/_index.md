@@ -12,7 +12,11 @@ shorthand.
 ## John Muir Trail
 
 I hiked the 220-mile John Muir Trail in California with my friend Daniel in
-July-August 2020. Here are some 4K pictures you can use as wallpaper.
+July-August 2020.
+
+### Wallpaper
+
+Here are some 4K pictures you can use as wallpaper.
 
 [![Garnet Lake](garnet_lake.jpg)](https://i.imgur.com/tuavUZF.jpg)
 [![Bighorn Plateau looking at Mt Whitney](bighorn_plateau.jpg)](https://i.imgur.com/m5yVRG5.jpg)
@@ -25,6 +29,14 @@ July-August 2020. Here are some 4K pictures you can use as wallpaper.
 [![Wide valley south of Forester Pass](south_of_forester_pass.jpg)](https://i.imgur.com/K1si1UD.jpg)
 
 [Imgur album](https://imgur.com/a/oWKrVai)
+
+### Vertical Wallpaper
+
+[![Fin Dome (near Rae Lakes)](vert_fin_dome.jpg)](https://i.imgur.com/8Ustm0T.jpeg)
+[![View from Selden Pass towards Heart Lake](vert_selden_pass.jpg)](https://i.imgur.com/f9c6jvf.jpeg)
+[![Sunrise from Wotans Throne](vert_wotans_throne.jpg)](https://i.imgur.com/DTRZ1tD.jpeg)
+
+[Imgur album](https://imgur.com/a/5EFjU1H)
 
 ### Dynamic wallpaper
 
