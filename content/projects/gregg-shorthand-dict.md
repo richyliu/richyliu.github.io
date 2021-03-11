@@ -3,7 +3,7 @@ title = "Gregg shorthand dictionary"
 description = "React web app for searching Gregg shorthand outlines."
 
 [extra]
-website = "https://gregg.surge.sh"
+website = "https://greggdict.rliu.dev/"
 github = "https://github.com/richyliu/greggdict"
 +++
 
