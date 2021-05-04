@@ -13,7 +13,7 @@ You can find my resume [here](/resume.pdf).
 ## PGP Key
 
 If you are concerned with privacy, you can send encrypted messages to me with my
-[public PGP key](/public.pgp).
+[public PGP key](/public.gpg).
 
 Fingerprint:
 ```
