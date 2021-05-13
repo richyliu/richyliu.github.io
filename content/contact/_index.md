@@ -6,6 +6,13 @@ title = "About"
 
 You can send me an email at <a href="mailto:richardliu@rliu.dev">richardliu@rliu.dev</a>.
 
+## Social Media
+
+- HackerNews: [richyliu](https://news.ycombinator.com/user?id=richyliu)
+- Reddit: [richyliu](https://www.reddit.com/user/richyliu)
+- Instagram: richyliu137
+- Matrix: @richyliu:matrix.org
+
 ## Resume
 
 You can find my resume [here](/resume.pdf).
