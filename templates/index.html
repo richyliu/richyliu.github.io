@@ -32,7 +32,8 @@
       <div class="sidebar">
         <div class="container sidebar-sticky">
           <div class="profile-img">
-            <img src="{{ resize_image(path="../static/profile.png", width=160, op="fit_width") }}" />
+            {% set profile = resize_image(path="../static/profile.png", width=160, op="fit_width") %}
+            <img src="{{ profile.url }}" />
           </div>
           <div class="sidebar-about">
             {% block sidebar_about %}
