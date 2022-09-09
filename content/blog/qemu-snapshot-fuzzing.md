@@ -3,13 +3,6 @@ title = "Implementing snapshot fuzzing in QEMU"
 date = 2022-09-09
 +++
 
-## Summary
-
-- custom QEMU fork implementing snapshot/restores
-    - [https://github.com/richyliu/qemu-fuzzing][github-harness]
-- fuzzer harness for any program compatible with libfuzzer
-    - [https://github.com/richyliu/neojetset-qemu/tree/dev-snapshot-shm][github-qemu]
-
 ## Background on snapshot fuzzing
 
 Fuzz testing is a powerful tool used to find bugs in complex programs by running
@@ -55,6 +48,10 @@ Code: a [QEMU patch][github-qemu] for controlling snapshot/restores of the VM
 and a [fuzzer "harness"][github-harness] to fuzz existing code built for
 libfuzzer. I describe each in further detail below.
 
+The [QEMU fork][github-qemu] has two new branches: `dev-snapshot`, which has my
+work from earlier this summer and `dev-snapshot-shm`, which is the final version
+of the snapshot/restore mechanism.
+
 ### QEMU patch
 
 I patched QEMU to add two things. First, I added a PCI interface between the VM
@@ -98,7 +95,7 @@ x86_64 is currently supported for the fuzzer.
 Clone my [snapshot harness][github-harness] code. Configure the paths to
 libfuzzer and clang at the top of `fuzzer_bridge/Makefile`. Build the static
 library and fuzzer controller by running:
-```sh'
+```
 cd fuzzer_bridge
 make server_fuzz libclient.a
 ```
@@ -124,7 +121,7 @@ significant speed improvements.
 Next, you need to find which PCI device corresponds to the snapshot device in
 QEMU. The snapshot device has an ID of `1234:f987`. Run the following command to
 search for the PCI device:
-```sh
+```
 lspci | grep "1234:f987"
 ```
 
