@@ -6,8 +6,8 @@ date = 2022-09-09
 ## Background on snapshot fuzzing
 
 Fuzz testing is a powerful tool used to find bugs in complex programs by running
-them again randomized inputs. Coverage-guided fuzzing uses program control flow
-information to optimize the inputs to reach as much code as possible when
+them against randomized inputs. Coverage-guided fuzzing uses program control
+flow information to optimize the inputs to reach as much code as possible when
 running. This way, we increase the chances of finding a crash, which is
 typically a bug in the code. Fuzzing has found many vulnerabilities in code in
 the past and researchers constantly work to improve its efficacy.
@@ -26,13 +26,11 @@ the state themselves. This presents a big challenge when dealing with complex
 programs, especially those with multiple processes interacting with each other
 at the same time. While AFL++'s fork server approach solves the state restore
 problem for simpler programs, it cannot handle larger programs (such as
-browsers) with IPC (inter-process communication). Additionally, fork servers are
-slow, requiring a copy of the entire child on each fork, and thus each
-iteration, of the fuzzer.
+browsers) with IPC (inter-process communication).
 
-I aim to solve the problem of restoring complex state by using a technique
-called snapshot fuzzing. Here, we run the code in a VM (QEMU). We maintain speed
-despite running the program in a VM by leveraging virtualization technologies
+To solve these challenges, I used a technique called snapshot fuzzing. I ran the
+code to be tested in a VM (QEMU). We can still maintain a similar level of
+performance as running natively by leveraging virtualization technologies
 such as KVM. Instead of using a fork server or manually restoring the state, we
 take an initial "snapshot" of the entire state of the VM, which can be roughly
 categorized into memory (RAM), CPU state (registers), and devices (drivers,
@@ -164,10 +162,9 @@ remmaped COW on each iteration of the fuzzer. To combat this, we can use
 existing dirty-page tracking tools in KVM to restore the pages manually, thereby
 significantly reducing page faults.
 
-The last flaw is a small one, and related to the user friendliness of the
-application. Currently, crashes are not handled and cause the `server_fuzz`
-application on the host to wait perpetually. Future work could be done to detect
-and report crashes and the crashed input.
+Finally, crashes are not handled and cause the `server_fuzz` application on the
+host to wait perpetually. Future work could be done to detect and report crashes
+and the crashed input.
 
 
 [building-qemu]:       https://wiki.qemu.org/Hosts/Linux#Building_QEMU_for_Linux
