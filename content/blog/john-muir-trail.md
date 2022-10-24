@@ -1,6 +1,8 @@
 +++
 title = "John Muir Trail"
 date = 2021-06-07
+[extra]
+hidden = true
 +++
 
 I hiked the 220-mile John Muir Trail in California with my friend Daniel in

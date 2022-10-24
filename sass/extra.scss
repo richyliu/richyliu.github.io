@@ -34,3 +34,17 @@
   display: inline;
   margin: 0.2rem;
 }
+
+.hidden {
+  display: none;
+}
+
+#show-extra-blog {
+  margin: 0;
+  padding: 5px;
+  border: none;
+  background: none;
+  color: gray;
+  font-size: 0.5rem;
+  cursor: pointer;
+}

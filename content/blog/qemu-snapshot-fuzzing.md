@@ -1,6 +1,7 @@
 +++
 title = "Implementing snapshot fuzzing in QEMU"
 date = 2022-09-09
+[extra]
 +++
 
 ## Background on snapshot fuzzing

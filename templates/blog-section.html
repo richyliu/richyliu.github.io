@@ -11,7 +11,12 @@
 
 <div class="posts">
   {% for page in section.pages %}
-  <div class="post">
+  <div class="post
+              {% if page.extra.hidden %}
+                hidden
+              {% endif %}
+              "
+       >
     <h1 class="post-title">
       <a href="{{ page.permalink }}">
         {{ page.title }}
@@ -22,6 +27,8 @@
   </div>
   {% endfor %}
 </div>
+
+<button id="show-extra-blog">Show more</button>
 {% endblock content %}
 
 

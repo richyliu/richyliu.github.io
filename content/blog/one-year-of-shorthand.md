@@ -1,6 +1,8 @@
 +++
 title = "One Year of Shorthand"
 date = 2021-02-08
+[extra]
+hidden = true
 +++
 
 Today marks one year since I started learning Gregg shorthand. I discovered
