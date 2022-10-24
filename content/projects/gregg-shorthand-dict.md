@@ -1,6 +1,7 @@
 +++
 title = "Gregg shorthand dictionary"
 description = "React web app for searching Gregg shorthand outlines."
+date = 2021-04-01
 
 [extra]
 website = "https://greggdict.rliu.dev/"
