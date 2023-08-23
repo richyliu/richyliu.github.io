@@ -4,13 +4,12 @@ title = "About"
 
 # Contact
 
-You can send me an email at <a href="mailto:richardliu@rliu.dev">richardliu@rliu.dev</a>.
+You can send me an email at "me rliu.dev" (add an "@" after the "me").
 
 ## Social Media
 
 - HackerNews: [richyliu](https://news.ycombinator.com/user?id=richyliu)
-- Reddit: [richyliu](https://www.reddit.com/user/richyliu)
-- Instagram: richyliu137
+- Discord: @rliu
 - Matrix: @richyliu:matrix.org
 
 ## Resume
