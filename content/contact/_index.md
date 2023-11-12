@@ -14,7 +14,7 @@ You can send me an email at "me rliu.dev" (add an "@" after the "me").
 
 ## Resume
 
-You can find my resume [here](/resume.pdf).
+Here is my [resume](/Resume 2023.pdf) and [CV](/CV.pdf)
 
 ## PGP Key
 
