@@ -1,0 +1,4 @@
+http://rliu.dev/*  https://rjliu.com/:splat  301!
+https://rliu.dev/* https://rjliu.com/:splat  301!
+http://www.rliu.dev/*  https://rjliu.com/:splat  301!
+https://www.rliu.dev/* https://rjliu.com/:splat  301!
